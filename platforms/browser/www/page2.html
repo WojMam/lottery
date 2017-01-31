@@ -30,6 +30,7 @@
 			$.post('http://serwer1615599.home.pl/walko/lotto_k.php', {}, function(output) {$('#lotto_k').html(output).show();})
 			$.post('http://serwer1615599.home.pl/walko/lotto_k_ss.php', {}, function(output) {$('#lotto_k_ss').html(output).show();})
 			$.post('http://serwer1615599.home.pl/walko/lotto_keno.php', {}, function(output) {$('#lotto_keno').html(output).show();})
+			
 		}		
 		<!-- function get_lotto()  -->
 		<!-- { -->
@@ -132,14 +133,17 @@
 		<!-- { -->
 		<!-- $.post('http://serwer1615599.home.pl/walko/lotto_plus.php', {}, function(output) {$('#lotto_plus').html(output).show();}) -->
 		<!-- } -->
-				<!-- window.onload = get_lotto; -->
+				
 		<!-- window.onload = get_lottoplus; -->
 		<!-- $(document).on("pagecreate", get_lotto()); -->
 		<!-- document.addEventListener('pageload', get_lotto()); -->
 		<!-- pageInit().on("pageload", get_lotto()); -->
 		<!-- $(document).on("pageInit", get_lotto()); -->
 	</script>
-	
+	<script>
+$(document).on("pagecreate", get_lotto());
+window.onload = get_lotto;
+	</script>
     <title>Hello World</title>
 </head>
 
