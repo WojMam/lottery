@@ -15,20 +15,100 @@
 <script type="text/javascript">
 		function get_lotto() 
 		{
-			$.post('http://serwer1615599.home.pl/walko/lotto.php', {}, function(output) {$('#lotto').html(output).show();})
-			$.post('http://serwer1615599.home.pl/walko/lotto_plus.php', {}, function(output) {$('#lotto_plus').html(output).show();})
-			$.post('http://serwer1615599.home.pl/walko/lotto_ss.php', {}, function(output) {$('#lotto_ss').html(output).show();})
-			$.post('http://serwer1615599.home.pl/walko/lotto_mm.php', {}, function(output) {$('#lotto_mm').html(output).show();})
-			$.post('http://serwer1615599.home.pl/walko/lotto_mm_plus.php', {}, function(output) {$('#lotto_mm_plus').html(output).show();})
-			$.post('http://serwer1615599.home.pl/walko/lotto_mm_ss.php', {}, function(output) {$('#lotto_mm_ss').html(output).show();})
-			$.post('http://serwer1615599.home.pl/walko/lotto_ep.php', {}, function(output) {$('#lotto_ep').html(output).show();})
-			$.post('http://serwer1615599.home.pl/walko/lotto_ep_ss.php', {}, function(output) {$('#lotto_ep_ss').html(output).show();})
-			$.post('http://serwer1615599.home.pl/walko/lotto_ml.php', {}, function(output) {$('#lotto_ml').html(output).show();})
-			$.post('http://serwer1615599.home.pl/walko/lotto_ml_ss.php', {}, function(output) {$('#lotto_ml_ss').html(output).show();})
-			$.post('http://serwer1615599.home.pl/walko/lotto_k.php', {}, function(output) {$('#lotto_k').html(output).show();})
-			$.post('http://serwer1615599.home.pl/walko/lotto_k_ss.php', {}, function(output) {$('#lotto_k_ss').html(output).show();})
-			$.post('http://serwer1615599.home.pl/walko/lotto_keno.php', {}, function(output) {$('#lotto_keno').html(output).show();})
-		}		
+			$.post('http://serwer1615599.home.pl/lotto/lotto.php', {}, function(output) {$('#lotto').html(output).show();})
+			$.post('http://serwer1615599.home.pl/lotto/lotto_plus.php', {}, function(output) {$('#lotto_plus').html(output).show();})
+			$.post('http://serwer1615599.home.pl/lotto/lotto_ss.php', {}, function(output) {$('#lotto_ss').html(output).show();})
+			$('#lotto_mm').html('').show();
+			$('#lotto_mm_plus').html('').show();
+			$('#lotto_mm_ss').html('').show();
+			$('#lotto_ep').html('').show();
+			$('#lotto_ep_ss').html('').show();
+			$('#lotto_ml').html('').show();
+			$('#lotto_ml_ss').html('').show();
+			$('#lotto_k').html('').show();
+			$('#lotto_k_ss').html('').show();
+			$('#lotto_keno').html('').show();
+		}
+		function get_lotto_mm() 
+		{
+			$.post('http://serwer1615599.home.pl/lotto/lotto_mm.php', {}, function(output) {$('#lotto_mm').html(output).show();})
+			$.post('http://serwer1615599.home.pl/lotto/lotto_mm_plus.php', {}, function(output) {$('#lotto_mm_plus').html(output).show();})
+			$.post('http://serwer1615599.home.pl/lotto/lotto_mm_ss.php', {}, function(output) {$('#lotto_mm_ss').html(output).show();})
+			$('#lotto').html('').show();
+			$('#lotto_plus').html('').show();
+			$('#lotto_ss').html('').show();
+			$('#lotto_ep').html('').show();
+			$('#lotto_ep_ss').html('').show();
+			$('#lotto_ml').html('').show();
+			$('#lotto_ml_ss').html('').show();
+			$('#lotto_k').html('').show();
+			$('#lotto_k_ss').html('').show();
+			$('#lotto_keno').html('').show();
+		}
+		function get_lotto_ep() 
+		{
+			$.post('http://serwer1615599.home.pl/lotto/lotto_ep.php', {}, function(output) {$('#lotto_ep').html(output).show();})
+			$.post('http://serwer1615599.home.pl/lotto/lotto_ep_ss.php', {}, function(output) {$('#lotto_ep_ss').html(output).show();})
+			$('#lotto').html('').show();
+			$('#lotto_plus').html('').show();
+			$('#lotto_ss').html('').show();
+			$('#lotto_mm').html('').show();
+			$('#lotto_mm_plus').html('').show();
+			$('#lotto_mm_ss').html('').show();
+			$('#lotto_ml').html('').show();
+			$('#lotto_ml_ss').html('').show();
+			$('#lotto_k').html('').show();
+			$('#lotto_k_ss').html('').show();
+			$('#lotto_keno').html('').show();
+		}
+		function get_lotto_ml() 
+		{
+			$.post('http://serwer1615599.home.pl/lotto/lotto_ml.php', {}, function(output) {$('#lotto_ml').html(output).show();})
+			$.post('http://serwer1615599.home.pl/lotto/lotto_ml_ss.php', {}, function(output) {$('#lotto_ml_ss').html(output).show();})
+			$('#lotto').html('').show();
+			$('#lotto_plus').html('').show();
+			$('#lotto_ss').html('').show();
+			$('#lotto_mm').html('').show();
+			$('#lotto_mm_plus').html('').show();
+			$('#lotto_mm_ss').html('').show();
+			$('#lotto_ep').html('').show();
+			$('#lotto_ep_ss').html('').show();
+			$('#lotto_k').html('').show();
+			$('#lotto_k_ss').html('').show();
+			$('#lotto_keno').html('').show();
+		}
+		function get_lotto_k() 
+		{
+			$.post('http://serwer1615599.home.pl/lotto/lotto_k.php', {}, function(output) {$('#lotto_k').html(output).show();})
+			$.post('http://serwer1615599.home.pl/lotto/lotto_k_ss.php', {}, function(output) {$('#lotto_k_ss').html(output).show();})
+			$('#lotto').html('').show();
+			$('#lotto_plus').html('').show();
+			$('#lotto_ss').html('').show();
+			$('#lotto_mm').html('').show();
+			$('#lotto_mm_plus').html('').show();
+			$('#lotto_mm_ss').html('').show();
+			$('#lotto_ep').html('').show();
+			$('#lotto_ep_ss').html('').show();
+			$('#lotto_ml').html('').show();
+			$('#lotto_ml_ss').html('').show();
+			$('#lotto_keno').html('').show();
+		}
+		function get_lotto_keno() 
+		{
+			$.post('http://serwer1615599.home.pl/lotto/lotto_keno.php', {}, function(output) {$('#lotto_keno').html(output).show();})
+			$('#lotto').html('').show();
+			$('#lotto_plus').html('').show();
+			$('#lotto_ss').html('').show();
+			$('#lotto_mm').html('').show();
+			$('#lotto_mm_plus').html('').show();
+			$('#lotto_mm_ss').html('').show();
+			$('#lotto_ep').html('').show();
+			$('#lotto_ep_ss').html('').show();
+			$('#lotto_ml').html('').show();
+			$('#lotto_ml_ss').html('').show();
+			$('#lotto_k').html('').show();
+			$('#lotto_k_ss').html('').show();
+		}
 		</script>
     <title>Gry liczbowe - projekt</title>
 </head>
@@ -41,16 +121,19 @@
 		</div>
 		
 		<div data-role="content" style="text-transform: none;">
+			<br>
+			<div id="main_logo" style="text-align:center"><img src="lotto_icons/lotto_main.png"></div>
+			<br>
 			<p>Aktualne wyniki gier liczbowych w Polsce:</p>
-			<a href="page2.html" data-role="button">Wyniki</a>
+			<a href="page2.html" data-role="button" data-fetched>Wyniki</a>
 			<br><br>
-			<a href="#dialog_page" data-role="button">Lotto</a>
+			<div id="small_logo" style="text-align:center"><img src="lotto_icons/lotto_small.png"></div>
+			<br>
+			<!-- <a href="#dialog_page" data-role="button">Lotto</a> -->
 			<a href="page3.html" data-role="button">Gry liczbowe w Polsce</a>
 			<a href="page4.html" data-role="button">Historia loterii</a>
-			<a href="page5.html" data-role="button">O projekcie</a>
-			<a href="page6.html" data-role="button">Użyte technologie</a>
-			<a href="page7.html" data-role="button">Strona totalizatora</a>
-			<a href="page8.html" data-role="button">Autorzy</a>
+			<a href="page5.html" data-role="button">Użyte technologie</a>
+			<a href="page6.html" data-role="button">Autorzy</a>
 		</div>
 		
 		<div data-role="footer" data-theme="b" data-position="fixed">
@@ -58,20 +141,20 @@
 		</div>
 	</div>
 				<!--dialog_page-->
-			<div id="dialog_page" data-role="dialog" id="home">
-				<div data-role="header">
-					<h1> Lotto </h1>
-				</div>
+			<!-- <div id="dialog_page" data-role="dialog" id="home"> -->
+				<!-- <div data-role="header"> -->
+					<!-- <h1> Lotto </h1> -->
+				<!-- </div> -->
 				
-				<div data-role="content" style="text-transform: none;">
-					<p>Aktualne wyniki losowań:</p>
-					<a href="#" data-role="button" data-rel="back" data-theme="b">Powrót</a>
-				</div>
+				<!-- <div data-role="content" style="text-transform: none;"> -->
+					<!-- <p>Aktualne wyniki losowań:</p> -->
+					<!-- <a href="#" data-role="button" data-rel="back" data-theme="b">Powrót</a> -->
+				<!-- </div> -->
 				
-				<div data-role="footer" data-theme='b' data-position="fixed">
-					<h4>&copy; MAMYS BARTYLAK GR.4</h4>
-				</div>
-			</div>
+				<!-- <div data-role="footer" data-theme='b' data-position="fixed"> -->
+					<!-- <h4>&copy; MAMYS BARTYLAK GR.4</h4> -->
+				<!-- </div> -->
+			<!-- </div> -->
 	<!-- Page 2 -->
 	<!-- <div id="page2" data-role="page" id="home" data-theme='a' data-title="Multi-Page Template"> -->
 		<!-- <div data-role="header" data-theme='b'> -->
