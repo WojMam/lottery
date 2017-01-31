@@ -15,23 +15,23 @@
 	<script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
 	<script type="text/javascript">
-		function get_lotto() 
-		{
-			$.post('http://serwer1615599.home.pl/walko/lotto.php', {}, function(output) {$('#lotto').html(output).show();})
-			$.post('http://serwer1615599.home.pl/walko/lotto_plus.php', {}, function(output) {$('#lotto_plus').html(output).show();})
-			$.post('http://serwer1615599.home.pl/walko/lotto_ss.php', {}, function(output) {$('#lotto_ss').html(output).show();})
-			$.post('http://serwer1615599.home.pl/walko/lotto_mm.php', {}, function(output) {$('#lotto_mm').html(output).show();})
-			$.post('http://serwer1615599.home.pl/walko/lotto_mm_plus.php', {}, function(output) {$('#lotto_mm_plus').html(output).show();})
-			$.post('http://serwer1615599.home.pl/walko/lotto_mm_ss.php', {}, function(output) {$('#lotto_mm_ss').html(output).show();})
-			$.post('http://serwer1615599.home.pl/walko/lotto_ep.php', {}, function(output) {$('#lotto_ep').html(output).show();})
-			$.post('http://serwer1615599.home.pl/walko/lotto_ep_ss.php', {}, function(output) {$('#lotto_ep_ss').html(output).show();})
-			$.post('http://serwer1615599.home.pl/walko/lotto_ml.php', {}, function(output) {$('#lotto_ml').html(output).show();})
-			$.post('http://serwer1615599.home.pl/walko/lotto_ml_ss.php', {}, function(output) {$('#lotto_ml_ss').html(output).show();})
-			$.post('http://serwer1615599.home.pl/walko/lotto_k.php', {}, function(output) {$('#lotto_k').html(output).show();})
-			$.post('http://serwer1615599.home.pl/walko/lotto_k_ss.php', {}, function(output) {$('#lotto_k_ss').html(output).show();})
-			$.post('http://serwer1615599.home.pl/walko/lotto_keno.php', {}, function(output) {$('#lotto_keno').html(output).show();})
+		<!-- function get_lotto()  -->
+		<!-- { -->
+			<!-- $.post('http://serwer1615599.home.pl/walko/lotto.php', {}, function(output) {$('#lotto').html(output).show();}) -->
+			<!-- $.post('http://serwer1615599.home.pl/walko/lotto_plus.php', {}, function(output) {$('#lotto_plus').html(output).show();}) -->
+			<!-- $.post('http://serwer1615599.home.pl/walko/lotto_ss.php', {}, function(output) {$('#lotto_ss').html(output).show();}) -->
+			<!-- $.post('http://serwer1615599.home.pl/walko/lotto_mm.php', {}, function(output) {$('#lotto_mm').html(output).show();}) -->
+			<!-- $.post('http://serwer1615599.home.pl/walko/lotto_mm_plus.php', {}, function(output) {$('#lotto_mm_plus').html(output).show();}) -->
+			<!-- $.post('http://serwer1615599.home.pl/walko/lotto_mm_ss.php', {}, function(output) {$('#lotto_mm_ss').html(output).show();}) -->
+			<!-- $.post('http://serwer1615599.home.pl/walko/lotto_ep.php', {}, function(output) {$('#lotto_ep').html(output).show();}) -->
+			<!-- $.post('http://serwer1615599.home.pl/walko/lotto_ep_ss.php', {}, function(output) {$('#lotto_ep_ss').html(output).show();}) -->
+			<!-- $.post('http://serwer1615599.home.pl/walko/lotto_ml.php', {}, function(output) {$('#lotto_ml').html(output).show();}) -->
+			<!-- $.post('http://serwer1615599.home.pl/walko/lotto_ml_ss.php', {}, function(output) {$('#lotto_ml_ss').html(output).show();}) -->
+			<!-- $.post('http://serwer1615599.home.pl/walko/lotto_k.php', {}, function(output) {$('#lotto_k').html(output).show();}) -->
+			<!-- $.post('http://serwer1615599.home.pl/walko/lotto_k_ss.php', {}, function(output) {$('#lotto_k_ss').html(output).show();}) -->
+			<!-- $.post('http://serwer1615599.home.pl/walko/lotto_keno.php', {}, function(output) {$('#lotto_keno').html(output).show();}) -->
 			
-		}		
+		<!-- }		 -->
 		<!-- function get_lotto()  -->
 		<!-- { -->
 			<!-- $.post('http://serwer1615599.home.pl/walko/lotto.php', {}, function(output) {$('#lotto').html(output).show();}) -->
@@ -141,7 +141,7 @@
 		<!-- $(document).on("pageInit", get_lotto()); -->
 	</script>
 	<script>
-$(document).on("pagecreate", get_lotto());
+
 window.onload = get_lotto;
 	</script>
     <title>Hello World</title>
@@ -160,45 +160,84 @@ window.onload = get_lotto;
 				<input type="image" src="lotto_icons/lotto.png" class="btTxt submit" onClick="get_lotto();"/>
 				<br>
 				<div id="lotto"></div>
+				<script type="text/javascript">
+						$.post('http://serwer1615599.home.pl/walko/lotto.php', {}, function(output) {$('#lotto').html(output).show();})
+				</script>
 				<br><br>
 				<div id="lotto_plus"></div>
+				<script type="text/javascript">
+						$.post('http://serwer1615599.home.pl/walko/lotto_plus.php', {}, function(output) {$('#lotto_plus').html(output).show();})
+				</script>
 				<br><br>
 				<div id="lotto_ss"></div>
+				<script type="text/javascript">
+						$.post('http://serwer1615599.home.pl/walko/lotto_ss.php', {}, function(output) {$('#lotto_ss').html(output).show();})
+				</script>
 				<br><br>
 				<input type="image" src="lotto_icons/multimulti.png" class="btTxt submit" onClick="get_lotto_mm();"/>
 				<!-- <div id="logo"><img src="lotto_icons/multimulti.png"</div> -->
 				<br>
 				<div id="lotto_mm"></div>
+				<script type="text/javascript">
+						$.post('http://serwer1615599.home.pl/walko/lotto_mm.php', {}, function(output) {$('#lotto_mm').html(output).show();})
+				</script>
 				<br><br><br>
 				<div id="lotto_mm_plus"></div>
+				<script type="text/javascript">
+						$.post('http://serwer1615599.home.pl/walko/lotto_mm_plus.php', {}, function(output) {$('#lotto_mm_plus').html(output).show();})
+				</script>
 				<br><br>
 				<div id="lotto_mm_ss"></div>
+				<script type="text/javascript">
+						$.post('http://serwer1615599.home.pl/walko/lotto_mm_ss.php', {}, function(output) {$('#lotto_mm_ss').html(output).show();})
+				</script>
 				<br><br>
 				<input type="image" src="lotto_icons/ep.png" class="btTxt submit" onClick="get_lotto_ep();"/>
 				<!-- <div id="logo"><img src="lotto_icons/ep.png"</div> -->
 				<br>
 				<div id="lotto_ep"></div>
+				<script type="text/javascript">
+						$.post('http://serwer1615599.home.pl/walko/lotto_ep.php', {}, function(output) {$('#lotto_ep').html(output).show();})
+				</script>
 				<br><br>
 				<div id="lotto_ep_ss"></div>
+				<script type="text/javascript">
+						$.post('http://serwer1615599.home.pl/walko/lotto_ep_ss.php', {}, function(output) {$('#lotto_ep_ss').html(output).show();})
+				</script>
 				<br><br>
 				<input type="image" src="lotto_icons/ml.png" class="btTxt submit" onClick="get_lotto_ml();"/>
 				<!-- <div id="logo"><img src="lotto_icons/ml.png"</div> -->
 				<br>
 				<div id="lotto_ml"></div>
+				<script type="text/javascript">
+						$.post('http://serwer1615599.home.pl/walko/lotto_ml.php', {}, function(output) {$('#lotto_ml').html(output).show();})
+				</script>
 				<br><br>
 				<div id="lotto_ml_ss"></div>
+				<script type="text/javascript">
+						$.post('http://serwer1615599.home.pl/walko/lotto_ml_ss.php', {}, function(output) {$('#lotto_ml_ss').html(output).show();})
+				</script>
 				<br><br>
 				<input type="image" src="lotto_icons/k.png" class="btTxt submit" onClick="get_lotto_k();"/>
 				<!-- <div id="logo"><img src="lotto_icons/k.png"</div> -->
 				<br>
 				<div id="lotto_k"></div>
+				<script type="text/javascript">
+						$.post('http://serwer1615599.home.pl/walko/lotto_k.php', {}, function(output) {$('#lotto_k').html(output).show();})
+				</script>
 				<br><br>
 				<div id="lotto_k_ss"></div>
+				<script type="text/javascript">
+						$.post('http://serwer1615599.home.pl/walko/lotto_k_ss.php', {}, function(output) {$('#lotto_k_ss').html(output).show();})
+				</script>
 				<br><br>
 				<input type="image" src="lotto_icons/keno.png" class="btTxt submit" onClick="get_lotto_keno();"/>
 				<!-- <div id="logo"><img src="lotto_icons/keno.png"</div> -->
 				<br>
 				<div id="lotto_keno"></div>
+				<script type="text/javascript">
+						$.post('http://serwer1615599.home.pl/walko/lotto_keno.php', {}, function(output) {$('#lotto_keno').html(output).show();})
+				</script>
 			</div>
 
 			<br><br><br>
@@ -214,6 +253,13 @@ window.onload = get_lotto;
     <script type="text/javascript" src="cordova.js"></script>
     
     <!-- <script type="text/javascript" src="js/index.js"></script> -->
+
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
 					<!-- <script type="text/javascript"> -->
 						<!-- $.post('http://serwer1615599.home.pl/walko/lotto.php', {}, function(output) {$('#lotto').html(output).show();}) -->
 						<!-- $.post('http://serwer1615599.home.pl/walko/lotto_plus.php', {}, function(output) {$('#lotto_plus').html(output).show();}) -->
@@ -230,13 +276,6 @@ window.onload = get_lotto;
 						<!-- $.post('http://serwer1615599.home.pl/walko/lotto_keno.php', {}, function(output) {$('#lotto_keno').html(output).show();}) -->
 						
 				<!-- </script> -->
-
-    <script type="text/javascript" src="cordova.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
-    <script type="text/javascript">
-        app.initialize();
-    </script>
-
 </body>
 
 </html>
